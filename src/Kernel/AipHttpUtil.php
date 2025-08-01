@@ -1,11 +1,11 @@
 <?php
 /**
- * User: qbhy
+ * User: Qbhy
  * Date: 2019/1/16
  * Time: 上午10:59
  */
 
-namespace Qbhy\BaiduAIP\Kernel;
+namespace myfind\BaiduAIP\Kernel;
 
 class AipHttpUtil
 {
