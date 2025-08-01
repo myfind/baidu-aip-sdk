@@ -71,6 +71,11 @@ class ImageProcess extends Api
      */
     const styleTransUrl = 'https://aip.baidubce.com/rest/2.0/image-process/v1/style_trans';
 
+    /**
+     * 文档图片去底纹 api url
+     */
+    const DocRepairUrl = 'https://aip.baidubce.com/rest/2.0/image-process/v1/doc_repair';
+
 
     /**
      * 图像无损放大接口
@@ -294,5 +299,23 @@ class ImageProcess extends Api
         $data = array_merge($data, $options);
 
         return $this->post(ImageProcess::styleTransUrl, $data);
+    }
+    
+
+    /**
+     * @param $image - 图像数据，base64编码字符串，大小不超过4M，最短边至少50px，最长边最大4096px，支持jpg/bmp/png格式 优先级：image > url
+     * @param array $options - 可选参数
+     * @return array
+     */
+    public function DocRepair($image, $options = array())
+    {
+
+        $data = array();
+
+        $data['image'] = base64_encode($image);
+
+        $data = array_merge($data, $options);
+
+        return $this->post(ImageProcess::DocRepairUrl, $data);
     }
 }
