@@ -1,18 +1,18 @@
 <?php
 /**
- * User: qbhy
+ * User: Qbhy
  * Date: 2019-01-16
  * Time: 20:28
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 /**
  * Class Kg
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
- * @package Qbhy\BaiduAIP
+ * @package myfind\BaiduAIP
  */
 class Kg extends Api
 {

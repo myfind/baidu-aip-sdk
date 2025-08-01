@@ -1,19 +1,19 @@
 <?php
 /**
  * @link http://ai.baidu.com/docs#/NLP-PHP-SDK/top
- * User: qbhy
+ * User: Qbhy
  * Date: 2019-01-16
  * Time: 20:17
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 /**
  * Class Nlp
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
- * @package Qbhy\BaiduAIP
+ * @package myfind\BaiduAIP
  */
 class Nlp extends Api
 {

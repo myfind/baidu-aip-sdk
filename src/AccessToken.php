@@ -1,11 +1,11 @@
 <?php
 /**
- * User: qbhy
+ * User: Qbhy
  * Date: 2019-01-15
  * Time: 20:17
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 use GuzzleHttp\Exception\BadResponseException;
 use Hanson\Foundation\AbstractAccessToken;
@@ -13,11 +13,11 @@ use Hanson\Foundation\AbstractAccessToken;
 /**
  * Class AccessToken
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
  * @property-read BaiduAIP app
  *
- * @package Qbhy\BaiduAIP
+ * @package myfind\BaiduAIP
  */
 class AccessToken extends AbstractAccessToken
 {

@@ -1,19 +1,19 @@
 <?php
 /**
  * @link http://ai.baidu.com/docs#/BodyAnalysis-PHP-SDK/top
- * User: qbhy
+ * User: Qbhy
  * Date: 2019-01-16
  * Time: 19:48
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 /**
  * Class BodyAnalysis
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
- * @package Qbhy\BaiduAIP
+ * @package myfind\BaiduAIP
  */
 class BodyAnalysis extends Api
 {

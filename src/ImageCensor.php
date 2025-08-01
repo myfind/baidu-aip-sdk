@@ -1,19 +1,19 @@
 <?php
 /**
  * @link http://ai.baidu.com/docs#/ImageCensoring-PHP-SDK/top
- * User: qbhy
+ * User: Qbhy
  * Date: 2019/1/16
  * Time: 上午11:40
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 /**
  * Class ImageCensor
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
- * @package Qbhy\BaiduAIP
+ * @package myfind\BaiduAIP
  */
 class ImageCensor extends Api
 {

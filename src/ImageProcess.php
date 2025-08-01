@@ -5,7 +5,7 @@
  * 图像效果增强服务
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 
 class ImageProcess extends Api

@@ -1,11 +1,11 @@
 <?php
 /**
- * User: qbhy
+ * User: Qbhy
  * Date: 2019-01-15
  * Time: 19:12
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -13,9 +13,9 @@ use Pimple\ServiceProviderInterface;
 /**
  * Class Ocr
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
- * @package Qbhy\BaiduAIP
+ * @package myfind\BaiduAIP
  */
 class ServiceProvider implements ServiceProviderInterface
 {

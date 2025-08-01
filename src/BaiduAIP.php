@@ -1,14 +1,14 @@
 <?php
 /**
- * User: qbhy
+ * User: Qbhy
  * Date: 2019-01-15
  * Time: 19:11
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 use Hanson\Foundation\Foundation;
-use Qbhy\BaiduAIP\Exceptions\UndefinedApplicationConfigurationException;
+use myfind\BaiduAIP\Exceptions\UndefinedApplicationConfigurationException;
 
 /**
  * Class BaiduAI
@@ -25,9 +25,9 @@ use Qbhy\BaiduAIP\Exceptions\UndefinedApplicationConfigurationException;
  * @property Kg            $kg
  * @property AccessToken   $access_token
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
- * @package Qbhy\BaiduAI
+ * @package myfind\BaiduAI
  */
 class BaiduAIP extends Foundation
 {

@@ -1,23 +1,23 @@
 <?php
 /**
- * User: qbhy
+ * User: Qbhy
  * Date: 2019-01-15
  * Time: 19:14
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 use GuzzleHttp\RequestOptions;
 use Hanson\Foundation\AbstractAPI;
-use Qbhy\BaiduAIP\Exceptions\UndefinedApplicationConfigurationException;
-use Qbhy\BaiduAIP\Kernel\AipSampleSigner;
+use myfind\BaiduAIP\Exceptions\UndefinedApplicationConfigurationException;
+use myfind\BaiduAIP\Kernel\AipSampleSigner;
 
 /**
  * Class Api
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
- * @package Qbhy\BaiduAIP
+ * @package myfind\BaiduAIP
  */
 class Api extends AbstractAPI
 {

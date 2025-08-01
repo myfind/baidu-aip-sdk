@@ -1,11 +1,11 @@
 <?php
 /**
- * User: qbhy
+ * User: Qbhy
  * Date: 2019/1/16
  * Time: 下午2:14
  */
 
-namespace Qbhy\BaiduAIP;
+namespace myfind\BaiduAIP;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Illuminate\Foundation\Application as LaravelApplication;
@@ -14,9 +14,9 @@ use Laravel\Lumen\Application as LumenApplication;
 /**
  * Class LaravelServiceProvider
  *
- * @author  qbhy <96qbhy@gmail.com>
+ * @author  Qbhy <Qbhy@gmail.com>
  *
- * @package Qbhy\BaiduAIP
+ * @package myfind\BaiduAIP
  */
 class LaravelServiceProvider extends BaseServiceProvider
 {
