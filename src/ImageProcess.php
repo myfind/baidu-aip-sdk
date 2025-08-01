@@ -76,6 +76,11 @@ class ImageProcess extends Api
      */
     const DocRepairUrl = 'https://aip.baidubce.com/rest/2.0/image-process/v1/doc_repair';
 
+    /**
+     * 智能抠图 api url
+     */
+    const SegmentUrl = 'https://aip.baidubce.com/rest/2.0/image-process/v1/segment';
+
 
     /**
      * 图像无损放大接口
@@ -307,7 +312,7 @@ class ImageProcess extends Api
      * @param array $options - 可选参数
      * @return array
      */
-    public function DocRepair($image, $options = array())
+    public function docRepair($image, $options = array())
     {
 
         $data = array();
@@ -317,5 +322,31 @@ class ImageProcess extends Api
         $data = array_merge($data, $options);
 
         return $this->post(ImageProcess::DocRepairUrl, $data);
+    }    
+    
+
+    /**
+     * @param $image - 图像数据，base64编码，要求base64编码后大小不超过10M，最短边至少128px，最长边最大3000px，支持JPG、JPEG、PNG、WEBP、BMP格式。优先级：image > url，当 image 字段存在时，url 字段失效
+     * @param array $options - 可选参数
+             method
+                 选择分割抠图的方式：
+                • auto：自动检测画面中的主体进行抠图
+                • control：手动框选主体进行抠图，需输入主体位置外框
+                默认为auto
+             position
+                所选择主体的位置信息数组，以boxes矩形坐标表示，当 method 参数选择“control”时必填：
+                输入矩形框左上角和右下角的坐标信息[ [[x1,y1], [x2,y2]] ]，其中左上角用[x1, y1], 右下角为[x2, y2]。支持可以输入多个矩形框，同时分割多个主体，[ [[x1,y1], [x2,y2]], [[x3,y3], [x4,y4]] ]， 建议矩形框完整框住主体。
+     * @return array
+     */
+    public function segment($image, $options = array())
+    {
+
+        $data = array();
+
+        $data['image'] = base64_encode($image);
+
+        $data = array_merge($data, $options);
+
+        return $this->post(ImageProcess::SegmentUrl, $data);
     }
 }
